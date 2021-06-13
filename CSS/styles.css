@@ -1,0 +1,262 @@
+header{
+     height: 100vh;
+    padding-top: 40px;}
+     
+body{ 
+   
+    font-size: 14px;
+    font-family:'Playfair Display', serif;
+    background-color:rgb(238, 237, 237);
+}
+img{max-width: 100%;
+    height: auto;
+    }
+/*nav*/
+
+
+#time{
+    padding-left: 35px;
+    font-family: Tahoma,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0,0,0,.55);
+}
+
+a{color: #b4ad9e;}
+a:hover{color: #898377;}
+.navbar{
+   height: 38px;
+}
+header .navbar-brand{font-family: 'Inconsolata', monospace;
+font-size: 50px;
+color:rgba(0,0,0,.55);
+text-transform: uppercase;
+margin-left: 100px;
+}
+header .nav-item {text-transform: uppercase;
+    font-family: 'Ubuntu',serif;
+margin-left: 50px;
+font-size: 16px;}
+header .nav-item a::after{
+    content:'';
+    display: block;
+    width: 100%;
+    background-color:rgba(0,0,0,.55);
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+header .nav-item a:hover::after {
+    transform: scale(1);
+}
+/*intro-text*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 120px;
+}
+.intro-inner{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    color:rgba(0,0,0,.65);
+    text-align: center;
+}
+.intro-text{
+    font-family: 'Ubuntu', serif;
+    font-size: 70px;
+    color: rgba(0,0,0,.65);
+}
+.intro-subtext{
+    font-family: 'Ubuntu',serif;
+    font-size: 40px;
+}
+.intro-subtext::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 30px auto 0;
+    background-color: rgba(0,0,0,.65);
+}
+/*about*/
+#about{ 
+    padding:80px 0 0;
+}
+.about-header{
+    margin: 0 auto 40px;
+    width: 100%;
+    max-width: 950px;
+    text-align: center;
+}
+.about-title{
+    font-family: 'Ubuntu',serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.65);
+    margin-bottom: 30px;
+}
+.text{
+    line-height: 1,5rem;
+    color: black;
+    font-size: 17px;
+}
+.about-title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 30px auto 0;
+    background-color: rgba(0,0,0,.65);}
+/*grid-photos*/
+.grid-photos .card{
+    border: 0;
+    background-color:rgb(238, 237, 237); 
+ }
+.grid-photos .card-body{ 
+    padding-left: 0;
+    padding-right: 0;
+}
+.grid-photos .card-img-top{
+    max-height: 300px;
+}
+.grid-photos .row{
+    max-width: 950px;
+    width: 100%;
+    margin:50px auto 0;
+   justify-content: space-between;
+}
+.grid-photos .card-title{
+    font-family: 'Ubuntu', serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #898377;
+}
+/*myskills*/
+#myskills{
+padding: 100px 0 40px;
+background-color:rgb(238, 237, 237);
+}
+
+
+/*logos*/
+.skills{
+    background-color:#fff;
+    margin: 80px 0 30px;
+}
+.logos{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin: 0 100px;
+}
+.logos-item{
+    
+    text-align: center;
+    font-size: 70px;
+    padding: 55px 20px;
+    border-left: 1px solid #898377;
+}
+
+.logos-item:last-child{
+    border-right: 1px solid #898377;
+}
+.logo-dis{
+    font-family: 'Ubuntu', serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #898377;  
+}
+/*4slider*/
+
+#projects{
+    margin-top: 30px;
+}
+
+.web-name{
+    color:black;
+    font-family: 'Ubuntu',serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.website{
+    color:rgba(0,0,0,.55);
+    font-family: 'Ubuntu',serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.d-block{
+    height: 200px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #fff;
+    padding: 40px 0;
+    color: rgba(0,0,0,.55);
+    margin-bottom: 0;
+    font-size: 22px;
+    text-align: center;
+}
+.copyright {
+    font-size: 18px;
+    color: #ccc;
+  }
+
+
+
+
+@media(max-width:1024px){
+    header{
+        background-repeat: no-repeat;
+    }
+    #about{
+        padding-top: 20px;}}
+
+
+@media(max-width:1200px){
+    .logos{
+        grid-template-columns:repeat(4,1fr);}
+        .logos-bootstrap{
+            border-right: 1px solid #898377;}}
+
+ @media(max-width:770px){
+    .web-name{
+        font-size: 25px;
+    }
+    .website{
+        font-size: 20px;
+  
+    }
+            .logos{
+                grid-template-columns: repeat(2,1fr);}
+                .logos-css{
+                    border-right: 1px solid #898377;}
+                    .logos-mongo{
+                        border-right: 1px solid #898377;}}
+
+        @media(max-width:736px){
+            header .navbar-brand{
+                font-size: 30px;
+                margin-left: 50px;
+                }
+                .logos{
+                    margin: 0 50px;
+                }}
+
+         @media(max-width:768px){
+                    header{
+                        background-repeat: no-repeat;
+                    }
+                #about{
+                    padding-top: 20px;
+                }}
+
+        @media(max-width:568px){
+                    header{
+                        background-repeat: no-repeat;}
+                        .logos{
+                            margin: 0 20px;
+                        }}
